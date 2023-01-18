@@ -11,7 +11,7 @@ module.exports = {
 
     resolve: {
         extensions: ["*", ".msj", ".js", ".svelte"], // Extensiones que se usarán en el proyecto.
-    }, // resolve de las extensiones y elementos que necesita webpack entender del proyecto.
+    }, // resolve de las extensiones y elementos que necesita webpack para entender del proyecto.
 
     module: {
         rules: [
