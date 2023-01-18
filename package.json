@@ -1,0 +1,19 @@
+{
+  "name": "pugstagram",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/euss99/Pugstagram.git"
+  },
+  "author": "Uriel Solís <euss99@hotmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/euss99/Pugstagram/issues"
+  },
+  "homepage": "https://github.com/euss99/Pugstagram#readme"
+}
