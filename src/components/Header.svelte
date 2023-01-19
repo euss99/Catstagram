@@ -1,3 +1,7 @@
+<script>
+    import {likeCount} from "../store/store.js";
+</script>
+
 <style>
 .Header {
     background-color: white;
@@ -65,6 +69,7 @@ h1:before {
                 <ul>
                     <li>
                         <i class="fa-solid fa-heart" /> <!-- Etiqueta de Font Awesome-->
+                        {$likeCount === 0 ? "" : $likeCount } <!-- Menjando la reactiviad si likeCount es 0 no muestra nada, pero si es más de cero mostrar contador -->
                     </li>
                     <li>
                         <i class="fas fa-user-alt" />

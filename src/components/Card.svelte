@@ -5,6 +5,8 @@
     import Modal from "./Modal.svelte";
     import Share from "./Share.svelte";
 
+    import {likeCount} from "../store/store.js";
+
     export let username;
     export let location;
     export let photo;
@@ -13,9 +15,23 @@
     export let avatar;
 
     let isModal = false;
+    let like = false;
+    let bookmark = false;
 
+    // Función para compartir las imágenes
     function handleClick() {
         isModal = !isModal;
+    }
+
+    // Función para darle like a una imágen
+    function handleLike() {
+        like = !like
+        if (like) {
+            // Si like es verdadero, se le sumará uno al store.
+            likeCount.update(n => n + 1);
+        } else {
+            likeCount.update(n => n - 1);
+        }
     }
 </script>
 
@@ -97,7 +113,7 @@
 .Card-description span {
     font-size: 14px;
 }
-/* .active-like {
+.active-like {
     color: #bc1888;
     animation: bounce linear 0.8s;
     animation-iteration-count: 1;
@@ -105,7 +121,7 @@
 }
 .active-bookmark {
     color: #f09433;
-} */
+}
 
 @keyframes bounce {
     0% {
@@ -158,20 +174,35 @@
         </div>
 
         <div class="Card-photo">
-            <figure>
+            <figure on:dblclick={handleLike}>
                 <img src={photo} alt={username} />
             </figure>
         </div>
 
         <div class="Card-icons">
             <div class="Card-icons-firts">
-                <i class="fas fa-heart" />
                 <!-- svelte-ignore a11y-click-events-have-key-events -->
-                <i class="fas fa-paper-plane" on:click={handleClick} />
+                <i 
+                    class="fas fa-heart" 
+                    class:active-like={like} 
+                    on:click={handleLike} 
+                />
+                <!-- class:active-like solo se va a activar la clase "active-like" cuando like sea verdadero -->
+
+                <!-- svelte-ignore a11y-click-events-have-key-events -->
+                <i 
+                    class="fas fa-paper-plane" 
+                    on:click={handleClick} 
+                />
             </div>
 
             <div class="Card-icons-second">
-                <i class="fas fa-bookmark" />
+                <!-- svelte-ignore a11y-click-events-have-key-events -->
+                <i 
+                    class="fas fa-bookmark" 
+                    class:active-bookmark={bookmark} 
+                    on:click={() => (bookmark = !bookmark)} 
+                />
             </div>
         </div>
 
