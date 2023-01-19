@@ -6,13 +6,14 @@
     import Sidebar from "../components/Sidebar.svelte";
 
     /* Lógica para llamada de una API */
-    let data_imgs = {};
+    let data = {};
 
-    const API_CATS = "https://api.thecatapi.com/v1/images/search?limit=10";
+    const API_CATS = "https://kittygram-api.vercel.app/";
 
     onMount(async () => {
         const response = await fetch(API_CATS);
-        data_imgs = await response.json();
+        data = await response.json();
+        console.log(data);
     });
 </script>
 
@@ -36,6 +37,6 @@
 
 <Header />
 <Main>
-    <TimeLine imgs={data_imgs} />
+    <TimeLine posts={data.posts} />
     <Sidebar />
 </Main>

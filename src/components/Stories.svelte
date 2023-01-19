@@ -73,7 +73,7 @@
                 </div>
                 <h2>
                     euss99
-                    <span>10 horas antes</span>
+                    <span>1 horas antes</span>
                 </h2>
             </div>
             <div class="Stories-item">
@@ -82,7 +82,7 @@
                 </div>
                 <h2>
                     euss99
-                    <span>10 horas antes</span>
+                    <span>8 horas antes</span>
                 </h2>
             </div>
             <div class="Stories-item">
@@ -91,7 +91,7 @@
                 </div>
                 <h2>
                     euss99
-                    <span>10 horas antes</span>
+                    <span>19 horas antes</span>
                 </h2>
             </div>
         </div>

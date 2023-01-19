@@ -1,7 +1,7 @@
 <script>
     import Card from "./Card.svelte";
 
-    export let imgs = [];
+    export let posts = [];
 
 </script>
 
@@ -13,8 +13,8 @@
 
 <div class="TimeLine">
     <div class="TimeLine-container">
-        {#each imgs as img}
-            <Card {...img} />   
+        {#each posts as post}
+            <Card {...post} />   
         {:else}
             <p>Loading...</p>
         {/each}
