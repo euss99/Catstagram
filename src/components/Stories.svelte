@@ -76,7 +76,24 @@
                     <span>10 horas antes</span>
                 </h2>
             </div>
-            
+            <div class="Stories-item">
+                <div class="Stories-item-box">
+                    <img src="https://i.imgur.com/DrClYyD.jpg" alt="Imágen de perfil" />
+                </div>
+                <h2>
+                    euss99
+                    <span>10 horas antes</span>
+                </h2>
+            </div>
+            <div class="Stories-item">
+                <div class="Stories-item-box">
+                    <img src="https://i.imgur.com/DrClYyD.jpg" alt="Imágen de perfil" />
+                </div>
+                <h2>
+                    euss99
+                    <span>10 horas antes</span>
+                </h2>
+            </div>
         </div>
     </div>
 </div>

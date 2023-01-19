@@ -1,8 +1,19 @@
 <script>
+    import { onMount } from "svelte";
     import Header from "../components/Header.svelte";
     import Main from "../components/Main.svelte";
     import TimeLine from "../components/TimeLine.svelte";
     import Sidebar from "../components/Sidebar.svelte";
+
+    /* Lógica para llamada de una API */
+    let data_imgs = {};
+
+    const API_CATS = "https://api.thecatapi.com/v1/images/search?limit=10";
+
+    onMount(async () => {
+        const response = await fetch(API_CATS);
+        data_imgs = await response.json();
+    });
 </script>
 
 <style>
@@ -25,6 +36,6 @@
 
 <Header />
 <Main>
-    <TimeLine />
+    <TimeLine imgs={data_imgs} />
     <Sidebar />
 </Main>

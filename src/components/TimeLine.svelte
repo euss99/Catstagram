@@ -1,5 +1,8 @@
 <script>
     import Card from "./Card.svelte";
+
+    export let imgs = [];
+
 </script>
 
 <style>
@@ -10,6 +13,10 @@
 
 <div class="TimeLine">
     <div class="TimeLine-container">
-        <Card />
+        {#each imgs as img}
+            <Card {...img} />   
+        {:else}
+            <p>Loading...</p>
+        {/each}
     </div>
 </div>

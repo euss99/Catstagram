@@ -1,5 +1,7 @@
 <script>
     import Comments from "./Comments.svelte";
+
+    export let url;
 </script>
 
 <style>
@@ -80,7 +82,7 @@
 .Card-description span {
     font-size: 14px;
 }
-.active-like {
+/* .active-like {
     color: #bc1888;
     animation: bounce linear 0.8s;
     animation-iteration-count: 1;
@@ -88,7 +90,7 @@
 }
 .active-bookmark {
     color: #f09433;
-}
+} */
 
 @keyframes bounce {
     0% {
@@ -133,7 +135,7 @@
 
         <div class="Card-photo">
             <figure>
-                <img src="https://static.platzi.com/media/public/uploads/elmo002_25658817-f5c1-44b5-91c3-18f73d365073.jpg" alt="Imágen de perfil" />
+                <img src={url} alt="Imágen de perfil" />
             </figure>
         </div>
 

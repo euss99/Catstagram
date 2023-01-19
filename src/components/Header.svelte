@@ -58,7 +58,7 @@ h1:before {
     <div class="Header-container">
         <div class="Header-content">
             <div class="Header-logo">
-                <h1>Pugstagram</h1>
+                <h1>Catstagram</h1>
             </div>
 
             <div class="Header-nav">
