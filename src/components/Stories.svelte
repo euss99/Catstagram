@@ -78,19 +78,19 @@
             </div>
             <div class="Stories-item">
                 <div class="Stories-item-box">
-                    <img src="https://i.imgur.com/DrClYyD.jpg" alt="Imágen de perfil" />
+                    <img src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Imágen de perfil" />
                 </div>
                 <h2>
-                    euss99
+                    julia_Gomez
                     <span>8 horas antes</span>
                 </h2>
             </div>
             <div class="Stories-item">
                 <div class="Stories-item-box">
-                    <img src="https://i.imgur.com/DrClYyD.jpg" alt="Imágen de perfil" />
+                    <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Imágen de perfil" />
                 </div>
                 <h2>
-                    euss99
+                    carlos_82
                     <span>19 horas antes</span>
                 </h2>
             </div>
