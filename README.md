@@ -44,6 +44,6 @@ Las contribuciones son bienvenidas. Si desea contribuir a este proyecto, siga lo
 2. Cree una rama con la funcionalidad que desea agregar
 3. Envíe una solicitud de extracción (pull request)
 
-##Autor
+## Autor
 
 El autor de este proyecto es Efraín Uriel Solís Salinas y puede ser contactado por correo electrónico a <euss99@hotmail.com>.
