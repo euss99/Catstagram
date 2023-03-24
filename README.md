@@ -21,7 +21,7 @@ Catstagram es un proyecto desarrollado con el framework Svelte que muestra imág
 1. Clonar el repositorio:
 
 ```bash
-git clone https://github.com/username/Catstagram.git
+git clone https://github.com/euss99/Catstagram.git
 ```
 
 2. Instalar las dependencias:
